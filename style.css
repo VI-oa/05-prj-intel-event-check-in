@@ -342,6 +342,19 @@ select {
   background-color: #fff7ed;
 }
 
+.celebration-message {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 8px;
+  color: #003c71;
+  background-color: #e8f4fc;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .team-name {
   font-size: 15px;
   font-weight: 500;
@@ -381,4 +394,5 @@ select {
   .teams-grid {
     grid-template-columns: 1fr;
   }
+
 }
