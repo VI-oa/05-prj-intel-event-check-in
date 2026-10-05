@@ -25,12 +25,10 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
-      135deg,
+  background: linear-gradient(135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
-      rgba(0, 60, 116, 0.9) 100%
-    ),
+      rgba(0, 60, 116, 0.9) 100%),
     url("img/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -335,9 +333,11 @@ select {
 .team-card.water {
   background-color: #e8f7fc;
 }
+
 .team-card.zero {
   background-color: #ecfdf3;
 }
+
 .team-card.power {
   background-color: #fff7ed;
 }
@@ -361,14 +361,81 @@ select {
   color: #475569;
 }
 
+.attendance-roster {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.attendance-roster h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: #334155;
+  font-size: 15px;
+}
+
+#attendanceTable th {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#attendanceTable td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+#attendanceTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.empty-roster td {
+  color: #94a3b8;
+  text-align: center;
+}
+
+.team-label {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.team-label.water {
+  background-color: #e8f7fc;
+  color: #006b91;
+}
+
+.team-label.zero {
+  background-color: #ecfdf3;
+  color: #18794e;
+}
+
+.team-label.power {
+  background-color: #fff7ed;
+  color: #a34b00;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
     padding: 35px 20px;
   }
+
   .hero h1 {
     font-size: 38px;
   }
+
   .container {
     padding: 32px;
     margin: 0 15px 30px;
